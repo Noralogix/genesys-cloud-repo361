@@ -3,7 +3,6 @@ $clientSecret = ""
 $date = "20210613"
 
 $rawdataUrl = "https://api.repo361.com/rawdata/files/$date/csv"
-$resource = "https://api.repo361.com"
 $authurl = "https://api.repo361.com/security/oauth2/token"
 
 $authboundary = [System.Guid]::NewGuid().ToString()
@@ -14,9 +13,6 @@ $tokenBearer = ""
 $token = ""
 
 $authbodyLines = (
-    "--$authboundary",
-    "Content-Disposition: form-data; name=`"resource`"$authLF",
-    $resource,
     "--$authboundary",
     "Content-Disposition: form-data; name=`"client_id`"$authLF",
     $clientId,
