@@ -16,4 +16,4 @@ GET https://api.repo361.com/rawdata/files/{date}/csv
 ```
 Where ***{date}*** in format ***yyyymmdd***, for example 20210613
 
-You can try [PowerShell](https://github.com/Noralogix/repo361-genesyscloud/blob/main/Repo361-RawData-API.ps1 ) example with your own clint credentials
+You can try [PowerShell](https://github.com/Noralogix/repo361-genesyscloud/blob/main/Repo361-RawData-API.ps1 ) example with your own client credentials.
