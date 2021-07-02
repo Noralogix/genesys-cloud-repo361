@@ -8,11 +8,21 @@
 Make post request with client credentials to generate auth token 
 ```http
 POST https://api.repo361.com/security/oauth2/token
+ContentType: application/x-www-form-urlencoded
+Form: {
+    "client_id": "put here client_id"
+    "client_secret": "put here client_secret"    
+    "grant_type": "client_credentials"    
+}
 ```
 
 Make get request with specified header Authorization
 ```http
 GET https://api.repo361.com/rawdata/files/{date}/csv
+Headers: {
+    "Authorization": "Bearer {put here access_token}"
+    "Content-Type": "application/json"
+  }
 ```
 Where ***{date}*** in format ***yyyymmdd***, for example 20210613
 
