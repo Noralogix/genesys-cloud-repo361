@@ -3,7 +3,7 @@
 2. Go to settings page and generate client secret. Store it in a safe place. Next time secret will be hidden. 
 3. Run Raw Data files API based on client credentials.
 
-> **Note:** Repo361 is not storing api client secrets. For security purposes it just gives possibilities to create, update or delete secrets.  
+> **For security purposes:** Repo361 is not storing api client secrets, it just gives possibilities to create, update or delete secrets. Raw data files urls accessible for 1 hour. 
 
 Make post request with client credentials to generate auth token 
 ```http
@@ -15,6 +15,5 @@ Make get request with specified header Authorization
 GET https://api.repo361.com/rawdata/files/{date}/csv
 ```
 Where ***{date}*** in format ***yyyymmdd***, for example 20210613
-Raw data CSV files urls accessible for 1 hour.
 
 You can try [PowerShell](https://github.com/Noralogix/repo361-genesyscloud/blob/main/Repo361-RawData-API.ps1 ) example with your own clint credentials
