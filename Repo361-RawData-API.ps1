@@ -1,4 +1,4 @@
-﻿$clientId = ""
+$clientId = ""
 $clientSecret = ""
 $date = "20210613"
 
