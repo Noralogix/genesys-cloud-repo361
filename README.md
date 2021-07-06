@@ -1,7 +1,8 @@
 ## Repo361 Genesys Cloud Raw Data 
-1. Login to [Repo361](https://apps.repo361.com/) with AD credentials.
-2. Go to settings page and generate client secret. Store it in a safe place. Next time secret will be hidden. 
-3. Run Raw Data files API based on client credentials.
+1. Make sure that your org have configured Raw Data by Noralogix and you have access rights to control client credentials.
+2. Login to [Repo361](https://apps.repo361.com/) with AD credentials.
+3. Go to settings page and generate client secret. Store it in a safe place. Next time secret will be hidden. 
+4. Run Raw Data files API based on client credentials.
 
 > **For security purposes:** Repo361 is not storing api client secrets, it just gives possibilities to create, update or delete secrets. Raw data files urls accessible for 1 hour. 
 
