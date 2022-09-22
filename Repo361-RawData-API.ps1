@@ -26,7 +26,7 @@ $authbodyLines = (
 ) -join $authLF
 
 try {
-    $tokenResponse = Invoke-WebRequest -Uri $authurl -Method Post -ContentType "multipart/form-data; boundary=$authboundary" -Body $authbodyLines
+    $tokenResponse = Invoke-WebRequest -Uri $authurl -Method Post -UseBasicParsing -ContentType "multipart/form-data; boundary=$authboundary" -Body $authbodyLines
     $tokenResponseJSON = ConvertFrom-Json $tokenResponse.Content
 
     # Extract the token from the response
