@@ -47,7 +47,7 @@ if ($authSuccess) {
         $headers = @{
         'Authorization' = $tokenBearer + ' ' + $token
         }
-        $rawdataResponse = Invoke-WebRequest -Uri $rawdataUrl -Method Get -ContentType "application/json" -Headers $headers
+        $rawdataResponse = Invoke-WebRequest -Uri $rawdataUrl -Method Get -UseBasicParsing -ContentType "application/json" -Headers $headers
         $rawdataResponseJSON = ConvertFrom-Json $rawdataResponse.Content
 
         foreach ($rdi in $rawdataResponseJSON)
