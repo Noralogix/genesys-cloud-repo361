@@ -1,4 +1,17 @@
-## Repo361 Genesys Cloud Raw Data 
+## Repo361 Genesys Cloud Raw Data
+Genesys Cloud historical data to CSV.
+- conversation attributes
+- conversation details
+- conversation summary
+- conversation session summary
+- users
+- users primary presence
+- users routing status
+- queues membership
+- evaluations
+- surveys
+
+## How to create API credentials 
 1. Make sure that your org have configured Raw Data by Noralogix and you have access rights to control client credentials.
 2. Login to [Repo361](https://apps.repo361.com/) with AD credentials.
 3. Go to settings page and generate client secret. Store it in a safe place. Next time secret will be hidden. 
