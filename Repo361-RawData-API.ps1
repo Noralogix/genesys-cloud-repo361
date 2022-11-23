@@ -1,6 +1,7 @@
 $clientId = ""
 $clientSecret = ""
 $date = "20210613"
+$downloadsPath = "C:\Repo361RawData"
 
 $rawdataUrl = "https://api.repo361.com/rawdata/files/$date/csv"
 $authurl = "https://api.repo361.com/security/oauth2/token"
@@ -11,8 +12,6 @@ $authLF = "`r`n"
 $authSuccess = $false
 $tokenBearer = ""
 $token = ""
-
-$downloadsPath = "C:\Users\Volodymyr\Desktop\test"
 
 $authbodyLines = (
     "--$authboundary",
