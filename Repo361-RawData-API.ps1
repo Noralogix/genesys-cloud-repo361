@@ -12,6 +12,8 @@ $authSuccess = $false
 $tokenBearer = ""
 $token = ""
 
+$downloadsPath = "C:\Users\Volodymyr\Desktop\test"
+
 $authbodyLines = (
     "--$authboundary",
     "Content-Disposition: form-data; name=`"client_id`"$authLF",
@@ -52,6 +54,7 @@ if ($authSuccess) {
 
         foreach ($rdi in $rawdataResponseJSON)
         {
+            Invoke-WebRequest $rdi.url -OutFile  $downloadsPath/$($date)/$($rdi.name).csv
             Write-Host $rdi.name 
             Write-Host $rdi.url
         }
