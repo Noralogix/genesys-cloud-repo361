@@ -44,4 +44,4 @@ You can try [PowerShell](https://github.com/Noralogix/repo361-genesyscloud/blob/
 
 Sample [C# .NET6 app](https://github.com/Noralogix/repo361-genesyscloud/tree/main/csharp-samples ) to fetch data and push mysql
 
-Before running sample app please check [MYSQL scripts](https://github.com/Noralogix/repo361-genesyscloud/tree/main/mysql ) to create table.  
+Before running sample app please check [MySQL scripts](https://github.com/Noralogix/repo361-genesyscloud/tree/main/mysql ) to create table.  
