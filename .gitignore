@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/csharp-samples/.vs
+/csharp-samples/dotnet6/bin/Debug/net6.0/runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll
+/csharp-samples/dotnet6/.vs
+/csharp-samples/dotnet6/bin/Debug/net6.0
+/csharp-samples/dotnet6/obj
+/csharp-samples/dotnet6/rawdata
