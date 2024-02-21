@@ -1,6 +1,7 @@
 $clientId = ""
 $clientSecret = ""
-$date = "20210613"
+$dateTwoDaysAgo = (Get-Date).AddDays(-2)
+$date = $dateTwoDaysAgo.ToString("yyyyMMdd")
 $downloadsPath = "C:\Repo361RawData"
 
 $rawdataUrl = "https://api.repo361.com/rawdata/files/$date/csv"
