@@ -52,9 +52,22 @@ if ($authSuccess) {
         $rawdataResponse = Invoke-WebRequest -Uri $rawdataUrl -Method Get -UseBasicParsing -ContentType "application/json" -Headers $headers
         $rawdataResponseJSON = ConvertFrom-Json $rawdataResponse.Content
 
+        # Check if the folder exists
+        if (-not (Test-Path -Path $downloadsPath)) {
+            # Folder does not exist, so create it
+            New-Item -ItemType Directory -Path $downloadsPath
+            Write-Host "Folder created: $downloadsPath"
+        }
         foreach ($rdi in $rawdataResponseJSON)
         {
-            Invoke-WebRequest $rdi.url -OutFile  $downloadsPath/$($date)/$($rdi.name).csv
+            $csvFilePath = "$downloadsPath/$($date)"
+            # Check if the folder exists
+            if (-not (Test-Path -Path $csvFilePath)) {
+                # Folder does not exist, so create it
+                New-Item -ItemType Directory -Path $csvFilePath
+                Write-Host "Folder created: $csvFilePath"
+            }        
+            Invoke-WebRequest $rdi.url -OutFile  $csvFilePath/$($rdi.name).csv
             Write-Host $rdi.name 
             Write-Host $rdi.url
         }
