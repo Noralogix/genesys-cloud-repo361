@@ -1,16 +1,14 @@
 ## Repo361 Genesys Cloud Raw Data
 Genesys Cloud historical data to CSV.
-- conversation attributes
-- conversation details
-- conversation summary
-- conversation session summary
-- users
-- users primary presence
-- users routing status
+- conversation details, attributes, summary, session summary, first agent summary
+- users, users primary presence, users routing status
 - queues membership
-- evaluations
-- surveys
-
+- qualty evaluations, surveys
+- wfm management units, wfm management units adherence
+- wrapups
+- routing languages, skills
+- campaigns,campaigns contactslists contacts
+   
 ## How to create API credentials 
 1. Make sure that your org have configured Raw Data by Noralogix and you have access rights to control client credentials.
 2. Login to [Repo361](https://apps.repo361.com/) with AD credentials.
@@ -42,7 +40,7 @@ Where ***{date}*** in format ***yyyymmdd***, for example 20210613
 
 You can try [PowerShell](https://github.com/Noralogix/repo361-genesyscloud/blob/main/Repo361-RawData-API.ps1 ) example with your own client credentials.
 
-PowerApps [example](https://www.noralogix.com/genesys/genesys-cloud-to-sharepoint)
+Microsoft PowerApps to SharePoint [example](https://www.noralogix.com/genesys/genesys-cloud-to-sharepoint)
 
 Sample [C# .NET6 app](https://github.com/Noralogix/repo361-genesyscloud/tree/main/csharp-samples ) to fetch data and push mysql
 
