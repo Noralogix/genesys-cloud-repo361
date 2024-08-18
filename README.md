@@ -42,6 +42,8 @@ Where ***{date}*** in format ***yyyymmdd***, for example 20210613
 
 You can try [PowerShell](https://github.com/Noralogix/repo361-genesyscloud/blob/main/Repo361-RawData-API.ps1 ) example with your own client credentials.
 
+PowerApps [example](https://www.noralogix.com/genesys/genesys-cloud-to-sharepoint)
+
 Sample [C# .NET6 app](https://github.com/Noralogix/repo361-genesyscloud/tree/main/csharp-samples ) to fetch data and push mysql
 
 Before running sample app please check [MySQL scripts](https://github.com/Noralogix/repo361-genesyscloud/tree/main/mysql ) to create table.  
