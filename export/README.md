@@ -102,4 +102,4 @@ Authorization: Bearer {access_token}
 
 By using the POST method, users can dynamically request data exports from Repo361 based on specific parameters like date and format, enabling greater flexibility in data retrieval for downstream processing and analysis.
 
-- You can try this [avro to spark script](https://github.com/Noralogix/repo361-genesyscloud/blob/main/export/Repo361-RawData-avro-to-spark.ipynb) using your own client credentials.
+- You can try this [avro to spark script](https://github.com/Noralogix/repo361-genesyscloud/blob/main/export/GenesysCloud-conversations-avro-to-spark.ipynb) using your own client credentials.
