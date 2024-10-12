@@ -71,6 +71,8 @@ Headers:
 
 ### Access Raw Data AVRO Files
 
+- Genesys Cloud [export in avro](https://github.com/Noralogix/repo361-genesyscloud/tree/main/export) 
+
 ---
 
 ### Example Implementations
@@ -80,6 +82,4 @@ Headers:
 - Check out this [Microsoft PowerApps to SharePoint integration](https://www.noralogix.com/genesys/sharepoint-connector) for further details.
 
 - A sample [C# .NET6 application](https://github.com/Noralogix/repo361-genesyscloud/tree/main/csharp-samples) demonstrates how to fetch data and push it to MySQL. Before running the sample app, make sure to review the [MySQL scripts](https://github.com/Noralogix/repo361-genesyscloud/tree/main/mysql) to create the necessary database tables.
-
-- Genesys Cloud [export in avro](https://github.com/Noralogix/repo361-genesyscloud/tree/main/export) 
 ---
