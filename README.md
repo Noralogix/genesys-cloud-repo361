@@ -72,7 +72,7 @@ Headers:
 ### Access Raw Data AVRO Files
 
 - Genesys Cloud [export in avro](https://github.com/Noralogix/repo361-genesyscloud/tree/main/export) 
-
+- Genesys Cloud [export bulk in avro pages](https://github.com/Noralogix/repo361-genesyscloud/tree/main/export-page) 
 ---
 
 ### Example Implementations
