@@ -20,9 +20,9 @@ This API endpoint allows users to request the export of raw data from Repo361 by
 
 The request body should be in JSON format and must include the following parameters:
 
-- **continuationToken** (required):  
-  _Type_: String
-  _Description_: A continuation token indicating where to resume paging or null to begin paging from the beginning..  
+- **continuationToken** (optional):  
+  _Type_: String 
+  _Description_: A continuation token indicating where to resume paging or null to begin paging from the beginning.  
 
 - **format** (optional):  
   _Type_: String  
